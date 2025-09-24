@@ -1,18 +1,39 @@
-# This is a sample Python script.
+import pandas
 
-# Press Ctrl+F5 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+df = pandas.read_csv("hotels.csv")
+
+class Hotel:
+    def __init__ (self, hotel_id)
+        self.hote
+
+    def available(self):
+        if
+            return True
+        else:
+            return False
+
+    def book(self):
+        pass
+
+class ReservationTicket:
+    def __init__(self, customer_name, hotel_object):
+        pass
+
+    def generate(self):
+        pass
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press F9 to toggle the breakpoint.
+print(df)
+hotel_id = input("Enter the ID of the hotel: ")
+
+hotel = Hotel(hotel_id)                #create a instant with specific details in argument
+if hotel.available():            #use the method of that instance
+    hotel.book()
+    name = input("Enter your name: ")
+    reservation_ticket = ReservationTicket(name, hotel)     #create a instant with specific details in argument
+    print(reservation_ticket.generate())                      #create a instant with specific details in argument
+else():
+    print('Hotel is not free!')
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
 
-    print("Hello")
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
